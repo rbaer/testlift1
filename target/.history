@@ -1,0 +1,29 @@
+update -jetty -run
+help
+update
+quit
+update ~jetty-run
+update
+exit
+jetty-run
+jetty-stop
+update -jetty -run
+jetty-run
+jetty-stop
+jetty-run
+jetty-stop
+jetty-run
+jetty-stop
+jetty-run
+jetty-stop
+jetty-run
+jetty-stop
+jetty-run
+jetty-stop
+jetty-run
+jetty-stop
+jetty-run
+compile
+jetty-restart
+exit
+jetty-run

@@ -1,0 +1,661 @@
+
+GitHub GitHub
+
+    Signup and Pricing
+    Explore GitHub
+    Features
+    Blog
+    Sign in
+
+    5
+    2
+
+public weiglewilczek / chatter
+
+    Code
+    Network
+    Pull Requests 0
+    Issues 1
+    Graphs
+
+    Tags 16
+    Downloads 1
+
+    Files
+    Commits
+    Branches 3
+
+chatter / step-by-step / 1.0.1 / pom.xml
+Heiko Seeberger 2 years ago
+Added tag 1.0.1 to step-by-step directory.
+
+0 contributors
+			
+			
+			
+			
+			
+			
+	name 	age 	
+history
+message
+	.. 		
+	1.0.1 	2 years ago 	Added tag 1.0.1 to step-by-step directory. [Heiko Seeberger]
+	2.0-M1 	a year ago 	Added 2.0 milestones to step-by-step directory. [Heiko Seeberger]
+	2.0-M2 	a year ago 	Added 2.0 milestones to step-by-step directory. [Heiko Seeberger]
+	2.0-M3 	a year ago 	Added 2.0 milestones to step-by-step directory. [Heiko Seeberger]
+	2.0-M4 	a year ago 	Added 2.0 milestones to step-by-step directory. [Heiko Seeberger]
+	2.0-M5 	a year ago 	Added 2.0 milestones to step-by-step directory. [Heiko Seeberger]
+	2.0-M6 	a year ago 	Added 2.0 milestones to step-by-step directory. [Heiko Seeberger]
+	2.0-M7 	a year ago 	Added 2.0 milestones to step-by-step directory. [Heiko Seeberger]
+	2.0 	a year ago 	Added 2.0 milestones to step-by-step directory. [Heiko Seeberger]
+	0.1-template 		
+	0.2-input 		
+	0.3-user-sitemap 		
+	0.4-messages 		
+	0.5-follow 		
+	2.0-M2.txt 	a year ago 	Added cheat sheets for 2.0 milestones. [Heiko Seeberger]
+	2.0-M3.txt 	a year ago 	Added cheat sheets for 2.0 milestones. [Heiko Seeberger]
+	2.0-M4.txt 	a year ago 	Added cheat sheets for 2.0 milestones. [Heiko Seeberger]
+	2.0-M5.txt 	a year ago 	Added cheat sheets for 2.0 milestones. [Heiko Seeberger]
+	2.0-M6.txt 	a year ago 	Added cheat sheets for 2.0 milestones. [Heiko Seeberger]
+	2.0-M7.txt 	a year ago 	Added cheat sheets for 2.0 milestones. [Heiko Seeberger]
+	2.0.txt 	a year ago 	Added cheat sheets for 2.0 milestones. [Heiko Seeberger]
+	name 	age 	
+history
+message
+	.. 		
+	src 	2 years ago 	Added tag 1.0.1 to step-by-step directory. [Heiko Seeberger]
+	README.textile 		
+	pom.xml 	2 years ago 	Added tag 1.0.1 to step-by-step directory. [Heiko Seeberger]
+file 274 lines (249 sloc) 8.857 kb
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210
+211
+212
+213
+214
+215
+216
+217
+218
+219
+220
+221
+222
+223
+224
+225
+226
+227
+228
+229
+230
+231
+232
+233
+234
+235
+236
+237
+238
+239
+240
+241
+242
+243
+244
+245
+246
+247
+248
+249
+250
+251
+252
+253
+254
+255
+256
+257
+258
+259
+260
+261
+262
+263
+264
+265
+266
+267
+268
+269
+270
+271
+272
+273
+
+	
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+########################################################################################################################
+Chatter
+########################################################################################################################
+-->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <!--
+######################################################################################################################
+Basics
+######################################################################################################################
+-->
+
+  <groupId>com.weiglewilczek.chatter</groupId>
+  <artifactId>chatter</artifactId>
+  <version>1.0</version>
+  <packaging>war</packaging>
+
+  <!--
+######################################################################################################################
+More project information
+######################################################################################################################
+-->
+
+  <name>Chatter</name>
+  <description>Twitter-like demo for Scala and Lift.</description>
+  <url>http://www.weiglewilczek.com/</url>
+  <inceptionYear>2010</inceptionYear>
+  <organization>
+    <name>WeigleWilczek</name>
+    <url>http://www.weiglewilczek.com/</url>
+  </organization>
+  <licenses>
+    <license>
+      <name>Apache 2.0 License</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <name>Heiko Seeberger</name>
+      <organization>WeigleWilczek</organization>
+      <email>heiko.seeberger@googlemail.com</email>
+    </developer>
+  </developers>
+
+  <!--
+######################################################################################################################
+Properties
+######################################################################################################################
+-->
+
+  <properties>
+
+    <!-- Common plugin settings -->
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>${project.build.sourceEncoding}</project.reporting.outputEncoding>
+    <maven.compiler.source>1.6</maven.compiler.source>
+    <maven.compiler.target>${maven.compiler.source}</maven.compiler.target>
+
+    <!-- Specific settings for ScalaModules -->
+    <scala.version>2.8.0</scala.version>
+    <scalatest.version>1.2</scalatest.version>
+    <lift.version>2.1</lift.version>
+  </properties>
+
+  <!--
+######################################################################################################################
+Dependencies
+######################################################################################################################
+-->
+
+  <dependencies>
+
+    <!-- Compile -->
+    <dependency>
+      <groupId>net.liftweb</groupId>
+      <artifactId>lift-webkit_2.8.0</artifactId>
+      <version>${lift.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>net.liftweb</groupId>
+      <artifactId>lift-mapper_2.8.0</artifactId>
+      <version>${lift.version}</version>
+    </dependency>
+
+    <!-- Provided -->
+    <!-- Just for IntelliJ! Overwrite scope with test where neccessary! -->
+    <dependency>
+      <groupId>org.scala-lang</groupId>
+      <artifactId>scala-compiler</artifactId>
+      <version>${scala.version}</version>
+      <scope>provided</scope>
+    </dependency>
+
+    <!-- Runtime -->
+    <dependency>
+      <groupId>com.h2database</groupId>
+      <artifactId>h2</artifactId>
+      <version>1.2.127</version>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>log4j</groupId>
+      <artifactId>log4j</artifactId>
+      <version>1.2.14</version>
+      <scope>runtime</scope>
+    </dependency>
+
+    <!-- Test -->
+    <dependency>
+      <groupId>org.scalatest</groupId>
+      <artifactId>scalatest</artifactId>
+      <version>${scalatest.version}</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.mockito</groupId>
+      <artifactId>mockito-all</artifactId>
+      <version>1.8.2</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.7</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.mortbay.jetty</groupId>
+      <artifactId>jetty</artifactId>
+      <version>6.1.22</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+
+  <!--
+######################################################################################################################
+Build
+######################################################################################################################
+-->
+
+  <build>
+    <sourceDirectory>src/main/scala</sourceDirectory>
+    <testSourceDirectory>src/test/scala</testSourceDirectory>
+    <plugins>
+
+      <!-- Plugins distributed by Maven (alphabetically sorted) -->
+      <plugin>
+        <artifactId>maven-clean-plugin</artifactId>
+        <version>2.3</version>
+      </plugin>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>2.1</version>
+      </plugin>
+      <plugin>
+        <artifactId>maven-dependency-plugin</artifactId>
+        <version>2.1</version>
+      </plugin>
+      <plugin>
+        <artifactId>maven-deploy-plugin</artifactId>
+        <version>2.5</version>
+      </plugin>
+      <plugin>
+        <artifactId>maven-resources-plugin</artifactId>
+        <version>2.4.1</version>
+      </plugin>
+      <plugin>
+        <artifactId>maven-source-plugin</artifactId>
+        <version>2.1.1</version>
+        <executions>
+          <execution>
+            <id>attach-sources</id>
+            <goals>
+              <goal>jar</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>2.4.3</version>
+        <configuration>
+          <includes>
+            <include>**/*Spec.java</include>
+            <include>**/*Test.java</include>
+          </includes>
+        </configuration>
+      </plugin>
+
+      <!-- Plugins distributed by 3rd parties (alphabetically sorted) -->
+      <plugin>
+        <groupId>org.mortbay.jetty</groupId>
+        <artifactId>maven-jetty-plugin</artifactId>
+        <version>6.1.22</version>
+        <configuration>
+          <contextPath>/</contextPath>
+          <scanIntervalSeconds>0</scanIntervalSeconds>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.scala-tools</groupId>
+        <artifactId>maven-scala-plugin</artifactId>
+        <version>2.13.1</version>
+        <configuration>
+          <scalaVersion>${scala.version}</scalaVersion>
+          <charset>${project.build.sourceEncoding}</charset>
+          <jvmArgs>
+            <jvmArg>-Xmx1024m</jvmArg>
+          </jvmArgs>
+          <args>
+            <arg>-target:jvm-1.5</arg>
+            <arg>-make:changed</arg>
+            <arg>-deprecation</arg>
+            <arg>-unchecked</arg>
+            <arg>-optimise</arg>
+          </args>
+        </configuration>
+        <executions>
+          <execution>
+            <goals>
+              <goal>compile</goal>
+              <goal>testCompile</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+
+  <!--
+######################################################################################################################
+Environment
+######################################################################################################################
+-->
+
+  <scm>
+    <connection>scm:git:git://github.com/weiglewilczek/chatter.git</connection>
+    <developerConnection>scm:git:git@github.com:weiglewilczek/chatter.git</developerConnection>
+    <url>http://github.com/weiglewilczek/chatter/tree/master</url>
+  </scm>
+  <issueManagement>
+    <system>github</system>
+    <url>http://github.com/weiglewilczek/chatter/issues/</url>
+  </issueManagement>
+  <repositories>
+    <repository>
+      <id>scala-tools.releases</id>
+      <name>Scala-Tools Dependencies Repository for Releases</name>
+      <url>http://scala-tools.org/repo-releases</url>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+    </repository>
+    <repository>
+      <id>scala-tools.snapshots</id>
+      <name>Scala-Tools Dependencies Repository for Snapshots</name>
+      <url>http://scala-tools.org/repo-snapshots</url>
+      <releases>
+        <enabled>false</enabled>
+      </releases>
+    </repository>
+  </repositories>
+
+</project>
+
+
+
+GitHub Links
+
+    GitHub
+    About
+    Blog
+    Features
+    Contact & Support
+    Training
+    GitHub Enterprise
+    Site Status
+
+    Clients
+    GitHub for Mac
+    GitHub for Windows
+    GitHub for Eclipse
+    GitHub Mobile Apps
+
+    Tools
+    Gauges: Web analytics
+    Speaker Deck: Presentations
+    Gist: Code snippets
+    Extras
+    Job Board
+    GitHub Shop
+    The Octodex
+
+    Documentation
+    GitHub Help
+    Developer API
+    GitHub Flavored Markdown
+    GitHub Pages
+
+    Terms of Service
+    Privacy
+    Security
+
+© 2012 GitHub Inc. All rights reserved.
