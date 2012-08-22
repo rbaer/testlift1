@@ -28,3 +28,8 @@ jetty-restart
 exit
 jetty-run
 jetty-restart
+quit
+jetty-run
+jetty-restart
+jetty-stop
+jetty-run
