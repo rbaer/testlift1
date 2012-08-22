@@ -27,3 +27,4 @@ compile
 jetty-restart
 exit
 jetty-run
+jetty-restart
