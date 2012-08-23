@@ -1,12 +1,17 @@
 #Source Dependencies
-#Thu Aug 23 08:30:30 CEST 2012
+#Thu Aug 23 10:32:17 CEST 2012
+src/main/scala/code/snippet/Param.scala=
 src/main/scala/code/comet/ChatServer.scala=src/main/scala/code/snippet/ChatIn.scala\:src/main/scala/code/comet/Chat.scala
 src/main/scala/db/SkalaDb.scala=
+src/main/scala/code/snippet/Dump.scala=
 src/main/scala/code/comet/Chat.scala=
+src/main/scala/code/snippet/Recurse.scala=
 src/main/scala/code/lib/DependencyFactory.scala=src/main/scala/code/snippet/HelloWorld.scala
 src/main/scala/code/snippet/HelloWorld.scala=
-src/main/scala/code/model/Person.scala=
 src/main/scala/code/snippet/ChatIn.scala=
+src/main/scala/code/model/Person.scala=
 src/main/scala/bootstrap/liftweb/Boot.scala=
+src/main/scala/code/snippet/Embedded.scala=
 src/main/scala/code/model/User.scala=src/main/scala/db/SkalaDb.scala\:src/main/scala/bootstrap/liftweb/Boot.scala
 src/main/scala/code/model/Inventur.scala=
+src/main/scala/code/snippet/OnSubmit.scala=

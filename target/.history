@@ -55,3 +55,7 @@ jetty-run
 jetty-restart
 jetty-run
 jetty-restart
+jetty-run
+jetty-restart
+quit
+jetty-restart
