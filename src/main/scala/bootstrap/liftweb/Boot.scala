@@ -49,9 +49,7 @@ class Boot {
       // more complex because this menu allows anything in the
       // /static path to be visible
       Menu(Loc("Static", Link(List("static"), true, "/static/index"), 
-	       "Test")),
-      Menu(Loc("Static", Link(List("static"), true, "/static/index2"), 
-	       "Inventur")))
+	       "Test Chat")))
 
     def sitemapMutators = User.sitemapMutator
 
