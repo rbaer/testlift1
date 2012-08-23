@@ -29,6 +29,7 @@ class Boot {
       LiftRules.unloadHooks.append(vendor.closeAllConnections_! _)
 
       DB.defineConnectionManager(DefaultConnectionIdentifier, vendor)
+      User.findAll( )
     }
 
     // Use Lift's Mapper ORM to populate the database
@@ -48,6 +49,8 @@ class Boot {
       // more complex because this menu allows anything in the
       // /static path to be visible
       Menu(Loc("Static", Link(List("static"), true, "/static/index"), 
+	       "Test")),
+      Menu(Loc("Static", Link(List("static"), true, "/static/index2"), 
 	       "Inventur")))
 
     def sitemapMutators = User.sitemapMutator

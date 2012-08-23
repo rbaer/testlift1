@@ -29,5 +29,6 @@
 	<classpathentry kind="lib" path="lib_managed/scala_2.9.0-1/test/junit-4.7.jar"/>
 	<classpathentry kind="lib" path="lib_managed/scala_2.9.0-1/test/servlet-api-2.5-20081211.jar"/>
 	<classpathentry kind="lib" path="lib_managed/scala_2.9.0-1/test/specs_2.9.0-1-1.6.8.jar"/>
+	<classpathentry kind="lib" path="lib_managed/scala_2.9.0-1/compile/postgresql-9.0-801.jdbc4.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
