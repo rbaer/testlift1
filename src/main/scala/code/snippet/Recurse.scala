@@ -34,6 +34,7 @@ class Recurse(which: Which) {
  */
 object FirstTemplate {
   // it's a passthru, but has the notice side effect
+  // 
   def render(in: NodeSeq) = {
     S.notice("First Template Snippet executed")
     in
