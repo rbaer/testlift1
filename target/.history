@@ -63,3 +63,4 @@ comp
 jetty-restart
 jetty-stop
 exit
+jetty-restart
