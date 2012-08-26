@@ -48,8 +48,8 @@ class Boot {
       Menu.i("Test Chat") / "/static/chat" >> User.AddUserMenusAfter, 
 
       Menu.i("Test Dump") / "/static/dump" >> User.AddUserMenusAfter, 
-      Menu.i("Test Recurse") / "/static/recurse" >> User.AddUserMenusAfter, 
-      Menu.i("Test Param") / "/static/param" >> User.AddUserMenusAfter, 
+      //Menu.i("Test Recurse") / "/static/recurse" >> User.AddUserMenusAfter, 
+      //Menu.i("Test Param") / "/static/param" >> User.AddUserMenusAfter, 
       Menu.i("Test Submit") / "/static/onsubmit" >> User.AddUserMenusAfter, 
 
       // more complex because this menu allows anything in the
