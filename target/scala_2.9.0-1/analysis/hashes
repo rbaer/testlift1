@@ -1,6 +1,6 @@
 #Source Hashes
-#Thu Aug 23 14:50:36 CEST 2012
-src/main/scala/code/snippet/Param.scala=327548ab95e6e98156f1d32f1d1e48863b0a2771
+#Sun Aug 26 14:31:59 CEST 2012
+src/main/scala/code/snippet/Param.scala=dc075f56f0ffe2b69e239de674c59aaa3f85e391
 src/main/scala/code/comet/ChatServer.scala=e02d05e74fa2791956098fd10a0670660f5a74e9
 src/main/scala/code/snippet/Dump.scala=644856d11d004cd96a9c93a5c0dcec0a608298b7
 src/main/scala/db/SkalaDb.scala=1ebafdffeb5edbec4c2b07a7b15399b040cdc7e9
@@ -8,7 +8,7 @@ src/main/scala/code/snippet/Recurse.scala=24c7b504932d58a921ea38109ecac3607cb5bb
 src/main/scala/code/comet/Chat.scala=ab80b147b3181f663bb3a9feed191ee8b3a45938
 src/main/scala/code/lib/DependencyFactory.scala=e5d94ad2d69afe24876734d3cc8549a5f3a7c7fd
 src/main/scala/code/snippet/HelloWorld.scala=5ec4fcdf025ae7ff12c14b619fe21a50bde86e84
-src/main/scala/bootstrap/liftweb/Boot.scala=edccdb2b7cca7821979275de3338df4273906a50
+src/main/scala/bootstrap/liftweb/Boot.scala=27cefc5f92f820cf85a7e2637a44301474620abe
 src/main/scala/code/snippet/ChatIn.scala=f8f1a7fed8fab269305c6b600b708ab57d4d186c
 src/main/scala/code/model/Person.scala=ba1db5df359c53ae9dfac01254620991c8cf173e
 src/main/scala/code/snippet/Embedded.scala=42d42650ea52808d6adb1eb29194260d0e70f90d

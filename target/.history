@@ -61,3 +61,5 @@ quit
 jetty-restart
 comp
 jetty-restart
+jetty-stop
+exit

@@ -45,16 +45,16 @@ class Boot {
     // Build SiteMap
     def sitemap = SiteMap(
       Menu.i("Home") / "index" >> User.AddUserMenusAfter, // the simple way to declare a menu
-      Menu.i("Test Chat") / "/static/index" >> User.AddUserMenusAfter, 
+      Menu.i("Test Chat") / "/static/chat" >> User.AddUserMenusAfter, 
 
       Menu.i("Test Dump") / "/static/dump" >> User.AddUserMenusAfter, 
       Menu.i("Test Recurse") / "/static/recurse" >> User.AddUserMenusAfter, 
-      //Menu.i("Test Param") / "/static/param" >> User.AddUserMenusAfter, 
+      Menu.i("Test Param") / "/static/param" >> User.AddUserMenusAfter, 
       Menu.i("Test Submit") / "/static/onsubmit" >> User.AddUserMenusAfter, 
 
       // more complex because this menu allows anything in the
       // /static path to be visible
-      Menu(Loc("Static", Link(List("static"), true, "/static/index2"), 
+      Menu(Loc("Static", Link(List("static"), true, "/static/inventur"), 
 	       "Inventur")))
 
     def sitemapMutators = User.sitemapMutator
