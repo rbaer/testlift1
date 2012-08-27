@@ -64,3 +64,11 @@ jetty-restart
 jetty-stop
 exit
 jetty-restart
+jetty-stop
+exit
+jetty-restart
+jetty-stop
+exit
+jetty-restart
+jetty-stop
+exit

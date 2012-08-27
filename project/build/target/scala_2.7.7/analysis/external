@@ -1,5 +1,5 @@
 #External Dependencies
-#Sun Aug 26 19:33:34 CEST 2012
+#Mon Aug 27 13:48:04 CEST 2012
 /home/ww/workspace/TestLift1/project/boot/scala-2.7.7/lib/scala-library.jar=LiftProject.scala
-/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/rt.jar=LiftProject.scala
+/usr/lib/jvm/java-6-openjdk-amd64/jre/lib/rt.jar=LiftProject.scala
 /home/ww/workspace/TestLift1/project/boot/scala-2.7.7/org.scala-tools.sbt/sbt/0.7.7/sbt_2.7.7-0.7.7.jar=LiftProject.scala
